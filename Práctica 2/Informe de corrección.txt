@@ -1,0 +1,100 @@
+HERNÃNDEZ GÃ“MEZ, JÃ‰SSICA;23900715
+Prueba p02: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p02.txt p02.tmp 
+Prueba p03: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p03.txt p03.tmp 
+Prueba p06: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p06.txt p06.tmp 
+Prueba p07: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p07.txt p07.tmp 
+Prueba p08: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p08.txt p08.tmp 
+Prueba p09: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p09.txt p09.tmp 
+Prueba p10: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p10.txt p10.tmp 
+Prueba p11: Hay errores de ejecucion
+==28092== Memcheck, a memory error detector
+==28092== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==28092== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==28092==  
+==28092== 
+==28092== Invalid read of size 8
+==28092==    at 0x40BAFC: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:184)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Address 0x5ac6b48 is 120 bytes inside a block of size 128 free'd
+==28092==    at 0x4C2F24B: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40BAF3: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:180)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Block was alloc'd at
+==28092==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40B641: LNear::insertaLocalidad(Localidad, int) (LNear.cc:103)
+==28092==    by 0x4022CD: main (p11.cc:36)
+==28092== 
+==28092== Invalid read of size 8
+==28092==    at 0x40BB65: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:192)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Address 0x5ac6b40 is 112 bytes inside a block of size 128 free'd
+==28092==    at 0x4C2F24B: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40BAF3: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:180)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Block was alloc'd at
+==28092==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40B641: LNear::insertaLocalidad(Localidad, int) (LNear.cc:103)
+==28092==    by 0x4022CD: main (p11.cc:36)
+==28092== 
+==28092== Invalid read of size 4
+==28092==    at 0x40BB76: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:193)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Address 0x5ac6b38 is 104 bytes inside a block of size 128 free'd
+==28092==    at 0x4C2F24B: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40BAF3: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:180)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Block was alloc'd at
+==28092==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40B641: LNear::insertaLocalidad(Localidad, int) (LNear.cc:103)
+==28092==    by 0x4022CD: main (p11.cc:36)
+==28092== 
+==28092== Invalid read of size 8
+==28092==    at 0x40BB80: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:194)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Address 0x5ac6b48 is 120 bytes inside a block of size 128 free'd
+==28092==    at 0x4C2F24B: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40BAF3: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:180)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Block was alloc'd at
+==28092==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28092==    by 0x40B641: LNear::insertaLocalidad(Localidad, int) (LNear.cc:103)
+==28092==    by 0x4022CD: main (p11.cc:36)
+==28092== 
+==28092== Invalid write of size 8
+==28092==    at 0x40BB84: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:194)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  Address 0x70 is not stack'd, malloc'd or (recently) free'd
+==28092== 
+==28092== 
+==28092== Process terminating with default action of signal 11 (SIGSEGV)
+==28092==  Access not within mapped region at address 0x70
+==28092==    at 0x40BB84: LNear::borraLocalidad(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (LNear.cc:194)
+==28092==    by 0x402698: main (p11.cc:58)
+==28092==  If you believe this happened as a result of a stack
+==28092==  overflow in your program's main thread (unlikely but
+==28092==  possible), you can try to increase the size of the
+==28092==  main thread stack using the --main-stacksize= flag.
+==28092==  The main thread stack size used in this run was 8388608.
+==28092== 
+==28092== HEAP SUMMARY:
+==28092==     in use at exit: 109,538 bytes in 219 blocks
+==28092==   total heap usage: 261 allocs, 42 frees, 133,305 bytes allocated
+==28092== 
+==28092== LEAK SUMMARY:
+==28092==    definitely lost: 0 bytes in 0 blocks
+==28092==    indirectly lost: 0 bytes in 0 blocks
+==28092==      possibly lost: 0 bytes in 0 blocks
+==28092==    still reachable: 109,538 bytes in 219 blocks
+==28092==         suppressed: 0 bytes in 0 blocks
+==28092== Rerun with --leak-check=full to see details of leaked memory
+==28092== 
+==28092== For counts of detected and suppressed errors, rerun with: -v
+==28092== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)
+Prueba p12: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p12.txt p12.tmp 
+Prueba p13: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p13.txt p13.tmp 
+Prueba p14: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p14.txt p14.tmp 
+Prueba p15: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p15.txt p15.tmp 
+Prueba p16: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p16.txt p16.tmp 
+Prueba p17: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p17.txt p17.tmp 
+Prueba p18: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p18.txt p18.tmp 
+Prueba p20: hay diferencias en la salida diferencias en fichero de salida txt; ejecuta diff p20.txt p20.tmp 

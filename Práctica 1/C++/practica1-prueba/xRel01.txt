@@ -1,0 +1,5 @@
+Bhosa (1,8): restaurante
+Sinrola (2,3): hotel - ** la fontana di trevi
+Calari (3,5): restaurante - * la playa de la caleta
+Asti (3,7): hotel
+Kahului (3,6): hotel

@@ -1,0 +1,43 @@
+Constructor default:
+0 0 0 0 0 
+
+Se crean dos objetos InfoTur:
+v1: 1 1 1 1 0 
+v2: 2 2 2 2 1 
+
+Se comparan dos objetos:
+Iguales: False
+Distintos: True
+v3: 0 0 0 0 0 
+v4: 1 2 3 4 1 
+
+Igualamos v3 y v4:
+v3: 1 2 3 4 1 
+v4: 1 2 3 4 1 
+
+Mas Frecuente 0:aeropuerto
+Mas Frecuente 1:hotel
+Mas Frecuente 2:hotel
+Mas Frecuente 3:restaurante
+Mas Frecuente 4:restaurante
+
+Usamos setTop() con los objetos:
+v: Farra 0 0 0 0 0 Farra
+v1: Ferre 1 1 1 1 0 Ferre
+v2: Firri 2 2 2 2 1 Firri
+v3: Forro 1 2 3 4 1 Forro
+v4: Furru 1 2 3 4 1 Furru
+
+Usamos getInfoTur():
+0 0 0 0 0 
+1 1 1 1 0 
+2 2 2 2 1 
+1 2 3 4 1 
+1 2 3 4 1 
+
+Usamos el constructir de copia:
+1 1 1 1 0 Ferre
+
+Usamos el destructor: 
+v4: 0 0 0 0 0 
+

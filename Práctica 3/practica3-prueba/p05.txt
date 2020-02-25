@@ -1,0 +1,7 @@
+Kapui-Motatau Putaruru
+Motatau-Kapui Saint Andrews
+Parua Bay-Putaruru Te Puru
+Putaruru-Kapui Parua Bay
+Saint Andrews-Motatau
+Te Puru-Parua Bay
+Distancia total=38

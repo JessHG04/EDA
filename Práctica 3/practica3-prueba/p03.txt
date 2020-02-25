@@ -1,0 +1,6 @@
+Kapui * Motatau - Parua Bay - Putaruru
+Motatau * Kapui - Saint Andrews
+Parua Bay * Kapui - Putaruru - Te Puru
+Putaruru * Kapui - Parua Bay - Te Puru
+Saint Andrews * Motatau
+Te Puru * Parua Bay - Putaruru

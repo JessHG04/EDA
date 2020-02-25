@@ -1,0 +1,53 @@
+TMMTMTMTMTMMMTTMMTTMM
+MMMTMTMTTMTTMMTMMMMTM
+MMMTTTMTTTMMMMMMMTMMM
+TTTMMTTMTMTMMTTMTMMMT
+TTMTTMTMMMTTTTTMMMTMM
+TMTMTTTTTTTMTMTTTMTMM
+TTTMMMTTTMMTTMTTTTMTT
+TMTTTTMMTMMTMTTTMMMTM
+MMMTTMMMTTTMTMTMMMTTM
+<LOCALIDAD>
+Primera
+3 0
+<INFO>
+aeropuerto
+*** Tryp
+<LOCALIDAD>
+Segunda
+3 0
+<INFO>
+** Hostalete
+aeropuerto
+museo 5
+<LOCALIDAD>
+Tercera
+6 19
+<INFO>
+aeropuerto
+monumento 3
+museo 2
+restaurante 5
+** El meson del jamon
+<LOCALIDAD>
+Cuarta
+6 19
+<INFO>
+monumento 4
+* lavapies
+aeropuerto
+monumento 2
+<LOCALIDAD>
+Quinta
+0 15
+<INFO>
+restaurante 9
+*** Estatua de Ibai
+monumento 3
+<LOCALIDAD>
+Sexta
+3 5
+<INFO>
+** jojo's
+museo 3
+hotel 2
