@@ -27,7 +27,9 @@ class LNear{
         void borrarLista();
         bool esVacia();
         int rango();
+        string getCostera(LNear);
         LNear getCosteras(Coleccion &);
+        string getConAeropuerto(LNear);
         void insertaLocalidad(Localidad, int);
         int borraLocalidad(string);
         void borraLocalidades(int);

@@ -61,10 +61,8 @@ void Provincia::calculaCercanas(Coleccion &c, int i){
 }
 
 int Provincia::borraLocalidad(string s){ 
-    int devolver = -1;
+    int devolver = locprox.borraLocalidad(s);
 
-    
-    
     return devolver;
 }
 
