@@ -152,13 +152,12 @@ char Coleccion::getCoorMapa(Coordenadas c){
     int f = c.getFila();
     int coor = c.getColumna();
 
-    for(unsigned x = 0; x<mapa.size(); x++){
-        for(unsigned y = 0; y<mapa[x].size(); y++){
-            if(f == x && coor == y){
+    for(unsigned int x = 0; x<mapa.size(); x++){
+        for(unsigned int y = 0; y<mapa[x].size(); y++){
+            if(f == (int)x && coor == (int)y){
                 devolver = mapa[x][y];
             }
         }
     }
     return devolver;
 }
-
