@@ -5,6 +5,8 @@
 #include "LNear.h"
 #include "Coleccion.h"
 
+using namespace std;
+
 class Provincia{
     friend std::ostream & operator<< (std::ostream &, Provincia &p);
     private:

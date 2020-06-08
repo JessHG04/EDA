@@ -4,6 +4,8 @@
 
 #include "Coordenadas.h"
 
+using namespace std;
+
 class Localidad{
     friend std::ostream & operator<< (std::ostream &, const Localidad &);
 

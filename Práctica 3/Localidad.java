@@ -15,27 +15,25 @@ public class Localidad {
 		id = -1;
 	}
 
-	public int setCoor(int f, int c, ArrayList<ArrayList<Character>> mapa) {
+	public int setCoor(int f, int c, ArrayList<ArrayList<Character>> mapa){
 		int devolver = -1;
-
-		if (mapa != null) {
-			if (f >= 0 && f < mapa.size()) {
-				if (c >= 0 && c < mapa.get(f).size()) {
-					if (mapa.get(f).get(c) != null) {
-						if (id == -1) {
-							if (mapa.get(f).get(c) == 'T') {
-								coor.setFila(f);
-								coor.setColumna(c);
-								mapa.get(f).set(c, 'L');
-								id = mapa.get(1).size() * f + c;
-								devolver = id;
-							}
+		
+		if(mapa!=null){
+			if(f >= 0 && f < mapa.size() && c >= 0 && c < mapa.get(0).size()){
+				if (mapa.get(f).get(c)!=null){
+					//System.out.println("Qué hay aqui: " + mapa.get(f).get(c));
+					if(mapa.get(f).get(c)!= -1){
+						if(mapa.get(f).get(c) == 'T'){
+							coor = new Coordenadas(f, c);
+							mapa.get(coor.getFila()).set(coor.getColumna(),'L');
+							id = mapa.get(1).size() * coor.getFila() + coor.getColumna();
+							devolver = id;
 						}
 					}
 				}
 			}
 		}
-
+		
 		return devolver;
 	}
 

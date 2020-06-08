@@ -36,11 +36,17 @@ public class TNear {
     }
 
     public boolean borraLocalidad(String p){
+        boolean devolver = false;
 
+
+
+        return devolver;
     }
 
     public TreeSet<Localidad2> getLocalidades(String s){
+        TreeSet<Localidad2> devolver = null;
 
+        return devolver;
     }
 
     public void setDn(int i){
@@ -48,7 +54,9 @@ public class TNear {
     }
 
     public TreeSet<Localidad2> getTop(int i){
+        TreeSet<Localidad2> devolver = null;
 
+        return devolver;
     }
 
     public String toString(){

@@ -4,6 +4,8 @@
 
 #include "InfoTur.h"
 
+using namespace std;
+
 class Coordenadas{
     friend std::ostream & operator<< (std::ostream &, const Coordenadas &);
 

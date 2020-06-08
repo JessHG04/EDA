@@ -42,4 +42,16 @@ public class Coordenadas {
 		String cadena = "(" + fila + "," + columna + ")" + "\n";
 		return cadena;
 	}
+
+	public boolean equals(Object p){
+		boolean devolver = false;
+
+		if(p instanceof Coordenadas){
+			if(((Coordenadas)p).getFila() == ((Coordenadas)p).getColumna()){
+				devolver = true;
+			}
+		}
+
+		return devolver;
+	}
 }

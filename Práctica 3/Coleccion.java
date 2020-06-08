@@ -126,12 +126,10 @@ public class Coleccion {
 
 	public char getCoorMapa(Coordenadas c) {
 		char devolver = 'X';
-
-		for (int x = 0; x < mapa.size(); x++) {
-			for (int y = 0; y < mapa.get(x).size(); y++) {
-				if (mapa.get(x).get(y) != -1) {
-					devolver = mapa.get(x).get(y);
-				}
+		
+		if(c.getFila() >= 0 && c.getColumna() >= 0){
+			if(c.getFila() < mapa.size() && c.getColumna() < mapa.get(0).size()){
+				devolver = mapa.get(c.getFila()).get(c.getColumna());
 			}
 		}
 		return devolver;
