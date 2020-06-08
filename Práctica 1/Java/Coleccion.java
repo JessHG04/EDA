@@ -1,4 +1,3 @@
-
 //23900715N HERNANDEZ GOMEZ, JESSICA
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -56,7 +55,7 @@ public class Coleccion {
 					l = new Localidad(linea); // Creo la localidad
 					linea = lectura.readLine();
 					elementos = linea.split(separador);
-					
+					//System.out.println("Elemento 1: " + Integer.parseInt(elementos[0]) + "Elemento 2: " + Integer.parseInt(elementos[1]));
 					int esta=l.setCoor(Integer.parseInt(elementos[0]), Integer.parseInt(elementos[1]), mapa) ;//!= -1){ // Agrego coordenadas
 						// INFORMACION
 						//System.out.println("Empiezo con la info de las localidades");
@@ -127,12 +126,10 @@ public class Coleccion {
 
 	public char getCoorMapa(Coordenadas c) {
 		char devolver = 'X';
-
-		for (int x = 0; x < mapa.size(); x++) {
-			for (int y = 0; y < mapa.get(x).size(); y++) {
-				if (mapa.get(x).get(y) != -1) {
-					devolver = mapa.get(x).get(y);
-				}
+		
+		if(c.getFila() >= 0 && c.getColumna() >= 0){
+			if(c.getFila() < mapa.size() && c.getColumna() < mapa.get(0).size()){
+				devolver = mapa.get(c.getFila()).get(c.getColumna());
 			}
 		}
 		return devolver;

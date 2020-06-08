@@ -1,1 +1,10 @@
-./corrige.sh: line 54: javac: command not found
+TNear.java:40: error: missing return statement
+    }
+    ^
+TNear.java:44: error: missing return statement
+    }
+    ^
+TNear.java:52: error: missing return statement
+    }
+    ^
+3 errors

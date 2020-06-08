@@ -1,15 +1,11 @@
-//DNI 23900715N HERNANDEZ GOMEZ, JESSICA
-#ifndef INFOTUR_h //Directiva de preprocesamiento (pa evitar errores de compilación)
-#define INFOTUR_h
+#pragma ONCE
 
 #include <iostream>
 #include <string>
 #include <vector>
-
 using namespace std;
-
 class InfoTur{
-    friend ostream & operator<< (ostream &, const InfoTur &);
+    friend std::ostream & operator<< (std::ostream &, const InfoTur &);
 
     private:
         int museo;
@@ -17,7 +13,7 @@ class InfoTur{
         int hotel;
         int restaurante;
         bool aeropuerto;
-        string top;
+        std::string top;
 
     public:
         InfoTur();
@@ -28,11 +24,9 @@ class InfoTur{
         bool operator!=(const InfoTur&);
         bool operator==(const InfoTur&);
         
-        vector<int> getInfoTur();
-        string getMasFrecuente();
-        void setTop(string n);
-        string getTop();
+        std::vector<int> getInfoTur();
+        std::string getMasFrecuente();
+        void setTop(std::string n);
+        std::string getTop();
         bool getAeropuerto();
 };
-
-#endif
