@@ -1,8 +1,8 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA 
  #include "InfoTur.h"
 
-ostream & operator<< (ostream &os, const InfoTur &c) { //Funcion amiga de sobrecarga del operador salida
-    os << c.museo << " " << c.monumento << " " << c.hotel << " " << c.restaurante << " " << c.aeropuerto << " " << c.top << endl;
+std::ostream & operator<< (std::ostream &os, const InfoTur &c) { //Funcion amiga de sobrecarga del operador salida
+    os << c.museo << " " << c.monumento << " " << c.hotel << " " << c.restaurante << " " << c.aeropuerto << " " << c.top << std::endl;
     return os;
 }
 
@@ -98,8 +98,8 @@ bool InfoTur::operator==(const InfoTur &t){
     return resultado;
 }
 
-vector<int> InfoTur::getInfoTur() { //Metodos
-    vector<int> devolver;
+std::vector<int> InfoTur::getInfoTur() { //Metodos
+    std::vector<int> devolver;
     int aero;
 
     if(!aeropuerto){
@@ -117,8 +117,8 @@ vector<int> InfoTur::getInfoTur() { //Metodos
     return devolver;
 }
 
-string InfoTur::getMasFrecuente() {
-    string devolver;
+std::string InfoTur::getMasFrecuente() {
+    std::string devolver;
     int mas;
     int aero;
 
@@ -150,11 +150,11 @@ string InfoTur::getMasFrecuente() {
     return devolver;
 }
 
-void InfoTur::setTop(string s) {
+void InfoTur::setTop(std::string s) {
     top = s;
 }
 
-string InfoTur::getTop() {
+std::string InfoTur::getTop() {
     return top;
 }
 

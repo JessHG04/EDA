@@ -2,13 +2,13 @@
 #include "Coleccion.h"
 #include <sstream>
 
-ostream & operator<< (ostream &os, const Coleccion &c) { //Funcion amiga de sobrecarga del operador salida
+std::ostream & operator<< (std::ostream &os, const Coleccion &c) { //Funcion amiga de sobrecarga del operador salida
     //MAPA
     for(unsigned x = 0; x<c.mapa.size(); x++){
         for(unsigned y = 0; y<c.mapa[0].size(); y++){
             os << c.mapa[x][y];
         }
-        os << endl;
+        os << std::endl;
     }
     //LOCALIDADES
     for(unsigned int z = 0; z<c.localidades.size(); z++){
@@ -37,25 +37,25 @@ Coleccion &Coleccion::operator=(const Coleccion &c){
     return *this;
 }
 
-void Coleccion::lectura(const string f){
-    fstream fichero;
+void Coleccion::lectura(const std::string f){
+    std::fstream fichero;
     fichero.open(f.c_str());
-    string linea;
+    std::string linea;
     int esta = -1;
-    vector<int> coords;
+    std::vector<int> coords;
     bool espacio = false;
     int coordX = -1;
     int coordY = -1;
-    string scoordX = "";
-    string scoordY = "";
-    string info = "";
+    std::string scoordX = "";
+    std::string scoordY = "";
+    std::string info = "";
     int museo = -1;
     int monumento = -1;
     int hotel = -1;
     int restaurante = -1;
     bool ae = false;
-    string top = "";
-    vector<char> v;
+    std::string top = "";
+    std::vector<char> v;
     
     if(fichero.is_open()){
         while(getline(fichero, linea)&&linea!="<LOCALIDAD>"){
@@ -83,8 +83,8 @@ void Coleccion::lectura(const string f){
             }
             espacio = false;
 
-            istringstream(scoordX)>>coordX;
-            istringstream(scoordY)>>coordY;
+            std::istringstream(scoordX)>>coordX;
+            std::istringstream(scoordY)>>coordY;
             esta = l.setCoor(coordX, coordY, getMapa());//Agrego coordenadas
             scoordX.clear();
             scoordY.clear();
@@ -94,22 +94,22 @@ void Coleccion::lectura(const string f){
             while(linea != "<LOCALIDAD>" && !fichero.eof()){
                 if(linea[0] == 'm'){//Caso Museo y Monumento
                     if(linea[1] == 'u'){ //Museo
-                        stringstream ss(linea);
+                        std::stringstream ss(linea);
                         ss>>info;
                         ss>>museo;
                     }else{
-                        stringstream ss(linea); // Monumento
+                        std::stringstream ss(linea); // Monumento
                         ss>>info;
                         ss>>monumento;
                     }
                 }
                 if(linea[0] == 'h'){
-                    stringstream ss(linea);
+                    std::stringstream ss(linea);
                     ss>>info;
                     ss>>hotel;
                 }
                 if(linea[0] == 'r'){ 
-                    stringstream ss(linea);
+                    std::stringstream ss(linea);
                     ss>>info;
                     ss>>restaurante;
                 }
@@ -139,11 +139,11 @@ void Coleccion::lectura(const string f){
     }
 }
 
-vector<vector<char> > & Coleccion::getMapa(){
+std::vector<std::vector<char> > & Coleccion::getMapa(){
     return mapa;
 }
 
-vector<Localidad> &Coleccion::getLocalidades(){
+std::vector<Localidad> &Coleccion::getLocalidades(){
     return localidades;
 }
 

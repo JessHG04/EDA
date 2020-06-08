@@ -1,9 +1,12 @@
-#pragma ONCE
+#ifndef INFOTUR_H
+#define INFOTUR_H
 
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
+
 class InfoTur{
     friend std::ostream & operator<< (std::ostream &, const InfoTur &);
 
@@ -30,3 +33,5 @@ class InfoTur{
         std::string getTop();
         bool getAeropuerto();
 };
+
+#endif

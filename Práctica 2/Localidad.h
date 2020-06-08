@@ -1,34 +1,33 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA
-#ifndef LOCALIDAD_h //Directiva de preprocesamiento (pa evitar errores de compilación)
-#define LOCALIDAD_h
+#ifndef LOCALIDAD_H
+#define LOCALIDAD_H
 
 #include "Coordenadas.h"
 
 using namespace std;
 
 class Localidad{
-    friend ostream & operator<< (ostream &, const Localidad &);
+    friend std::ostream & operator<< (std::ostream &, const Localidad &);
 
     private:
-        string nombre;
+        std::string nombre;
         Coordenadas coor;
         InfoTur info;
         int id;
 
     public:
         Localidad();
-        Localidad(string n);
+        Localidad(std::string n);
         Localidad(const Localidad &);
         ~Localidad();
         Localidad & operator=(const Localidad &);
         
-        int setCoor(int f, int c, vector<vector<char> > &m);
+        int setCoor(int f, int c, std::vector<std::vector<char> > &m);
         void setInfo(InfoTur);
-        string getNombre();
+        std::string getNombre();
         Coordenadas getCoor();
         InfoTur &getInfo();
         int getId();
         
 };
-
 #endif

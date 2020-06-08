@@ -11,7 +11,6 @@ int main(int argc,char* argv[]){
   LNear lista;
   if(argc==2){
     col.lectura(argv[1]);
-    //cout << "LA COLECCCIOOON:" << col << endl;
     vector<Localidad> locas=col.getLocalidades();
     for(int i=0;i<(int)locas.size();i++){
       lista.insertaLocalidad(locas[i],i+1);

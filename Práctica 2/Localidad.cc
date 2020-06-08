@@ -1,8 +1,8 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA
 #include "Localidad.h"
 
-ostream & operator<< (ostream &os, const Localidad &l) { //Funcion amiga de sobrecarga del operador salida
-    os << l.id << "-" << l.nombre << "-" << l.coor << endl << l.info;
+std::ostream & operator<< (std::ostream &os, const Localidad &l) { //Funcion amiga de sobrecarga del operador salida
+    os << l.id << "-" << l.nombre << "-" << l.coor << std::endl << l.info;
     return os;
 }
 
@@ -13,7 +13,7 @@ Localidad::Localidad(){
     id = -1;
 }
 
-Localidad::Localidad(string n){
+Localidad::Localidad(std::string n){
     nombre = n;
     coor = Coordenadas();
     info = InfoTur();
@@ -43,7 +43,7 @@ Localidad & Localidad::operator=(const Localidad &l){
     return *this;
 }
 
-int Localidad::setCoor(int f, int c, vector<vector<char> > &mapa){
+int Localidad::setCoor(int f, int c, std::vector<std::vector<char> > &mapa){
     int devolver = -1;
 
     if(f >= 0 && f<(int)mapa.size()){
@@ -66,7 +66,7 @@ void Localidad::setInfo(InfoTur i){
     info = i;
 }
 
-string Localidad::getNombre(){
+std::string Localidad::getNombre(){
     return nombre;
 }
 

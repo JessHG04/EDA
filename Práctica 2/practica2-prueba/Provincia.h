@@ -1,14 +1,12 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA
-#ifndef PROVINCIA_h
-#define PROVINCIA_h
+#ifndef PROVINCIA_H
+#define PROVINCIA_H
 
 #include "LNear.h"
 #include "Coleccion.h"
 
-using namespace std;
-
 class Provincia{
-    friend ostream & operator<< (ostream &, Provincia &p);
+    friend std::ostream & operator<< (std::ostream &, Provincia &p);
     private:
         Localidad lc;
         LNear locprox; //Lista
@@ -21,10 +19,10 @@ class Provincia{
         Provincia &operator=(const Provincia &p);
         int distanciaManhattan(int x1, int y1, int x2, int y2);
         void calculaCercanas(Coleccion &c, int i);
-        int borraLocalidad(string s);
+        int borraLocalidad(std::string s);
         LNear &getCercanas();
-        string getCostera(Coleccion &c);
+        std::string getCostera(Coleccion &c);
         LNear getCosteras(Coleccion &c);
-        string getConAeropuerto();
+        std::string getConAeropuerto();
 };
 #endif

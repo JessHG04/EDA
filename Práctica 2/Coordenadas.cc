@@ -1,7 +1,7 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA 
 #include "Coordenadas.h"
 
-ostream & operator<< (ostream &os, const Coordenadas &c) { //Funcion amiga de sobrecarga del operador salida
+std::ostream & operator<< (std::ostream &os, const Coordenadas &c) { //Funcion amiga de sobrecarga del operador salida
     os << "(" << c.fila << "," << c.columna << ")";
     return os;
 }

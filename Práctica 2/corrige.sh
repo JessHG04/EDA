@@ -90,8 +90,8 @@ if $continuar; then
         $(valgrind ./$nombre >$nombre.tmp 2>$nombre.tmp.err)
         sed -i "s/Command: .\/$nombre//" $nombre.tmp.err
       fi
-   fi
     grep "$nombre" $nombre.tmp.err >viola.txt
+   fi
     hayseg=$(cat viola.txt|wc -l)
     if test $hayseg -eq 0; then
       mem=$(grep "definitely lost:" $nombre.tmp.err |sed 's/  */ /g'|cut -d " " -f 4,7)

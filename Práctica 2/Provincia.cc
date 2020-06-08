@@ -1,8 +1,8 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA
 #include "Provincia.h"
 
-ostream & operator<< (ostream &os, Provincia &p) {
-    os << p.lc.getNombre() << endl;
+std::ostream & operator<< (std::ostream &os, Provincia &p) {
+    os << p.lc.getNombre() <<std::endl;
     os << p.locprox;
     return os;
 }
@@ -60,7 +60,7 @@ void Provincia::calculaCercanas(Coleccion &c, int i){
     }
 }
 
-int Provincia::borraLocalidad(string s){ 
+int Provincia::borraLocalidad(std::string s){ 
     int devolver = locprox.borraLocalidad(s);
 
     return devolver;
@@ -70,10 +70,10 @@ LNear &Provincia::getCercanas(){
     return locprox;
 }
 
-string Provincia::getCostera(Coleccion &c){ 
+std::string Provincia::getCostera(Coleccion &c){ 
     LNear costeras = locprox.getCosteras(c);
-    string costera = locprox.getCostera(costeras);
-    string devolver = "no hay ninguna localidad costera";
+    std::string costera = locprox.getCostera(costeras);
+    std::string devolver = "no hay ninguna localidad costera";
 
     if(costera == ""){
         return devolver;
@@ -88,10 +88,10 @@ LNear Provincia::getCosteras(Coleccion &c){
     return devolver;
 }
 
-string Provincia::getConAeropuerto(){
-    string propio = "propio";
-    string no = "sin aeropuerto";
-    string proximo = locprox.getConAeropuerto(locprox);
+std::string Provincia::getConAeropuerto(){
+    std::string propio = "propio";
+    std::string no = "sin aeropuerto";
+    std::string proximo = locprox.getConAeropuerto(locprox);
 
     if(lc.getInfo().getAeropuerto()){
         return propio;

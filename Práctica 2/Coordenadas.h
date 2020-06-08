@@ -1,13 +1,13 @@
 //DNI 23900715N HERNANDEZ GOMEZ, JESSICA
-#ifndef COORDENADAS_h //Directiva de preprocesamiento (pa evitar errores de compilación)
-#define COORDENADAS_h
+#ifndef COORDENADAS_H
+#define COORDENADAS_H
 
 #include "InfoTur.h"
 
 using namespace std;
 
 class Coordenadas{
-    friend ostream & operator<< (ostream &, const Coordenadas &);
+    friend std::ostream & operator<< (std::ostream &, const Coordenadas &);
 
     private:
         int fila;
@@ -26,5 +26,4 @@ class Coordenadas{
         void setColumna(int);
     
 };
-
 #endif

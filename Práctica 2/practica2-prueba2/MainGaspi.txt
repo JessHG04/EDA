@@ -1,0 +1,270 @@
+La lista esta vacia: 1
+La lista esta vacia: 1
+La lista esta vacia: 0
+Muestro Lista: 
+aa (10)
+bb (10)
+bc (10)
+cc (10)
+dd (10)
+ee (10)
+aa (15)
+bb (15)
+cc (15)
+
+Muestro Lista: 
+aa (10)
+bb (10)
+bc (10)
+cc (10)
+dd (10)
+ee (10)
+aa (15)
+bb (15)
+cc (15)
+
+Direccion primera: 0x7fff3caa8290
+Direccion segunda: 0x7fff3caa8490
+
+Lista 2
+Muestro Lista: 
+dd (-10)
+dd (0)
+aa (5)
+bb (5)
+cc (5)
+aa (10)
+bb (10)
+bc (10)
+cc (10)
+dd (10)
+ee (10)
+
+Borro: -1
+Borro: 5
+Borro: 5
+Borro: 10
+Borro: -1
+Borro: 10
+Borro: 10
+Borro: -1
+Borro: -10
+Borro: 0
+Borro: 10
+Borro: 5
+Borro: 10
+Borro: 10
+
+Muestro lista 2: 
+Muestro copia2: 
+La lis2 esta vacia: 1
+La copia2 esta vacia: 1
+
+Muestro Lista: 
+
+Borro todas las localidades: 
+Muestro Lista: 
+
+
+LISTA 3:dd (-700)
+dd (0)
+aa (10)
+bb (10)
+cc (10)
+dd (10)
+bc (11)
+dd (11)
+aa (15)
+bb (15)
+cc (15)
+ee (15)
+
+Borro a partir de 20
+Muestro Lista: 
+dd (-700)
+dd (0)
+aa (10)
+bb (10)
+cc (10)
+dd (10)
+bc (11)
+dd (11)
+aa (15)
+bb (15)
+cc (15)
+ee (15)
+
+Borro a partir de 10
+Muestro Lista: 
+dd (-700)
+dd (0)
+aa (10)
+bb (10)
+cc (10)
+dd (10)
+
+Borro a partir de 10
+Muestro Lista: 
+dd (-700)
+dd (0)
+aa (10)
+bb (10)
+cc (10)
+dd (10)
+
+Borro a partir de -800
+Muestro Lista: 
+
+La lis3 esta vacia: 1
+Borro a partir de -1000
+Muestro Lista: 
+
+
+
+-------------LISTA 4------------
+-1--(-1,-1)
+0 0 0 0 0 
+
+-1-aa-(-1,-1)
+1 1 1 1 1 SoyEl1
+ --> aa
+Lista 4 antes del cambio pop: 
+aa (10)
+bb (10)
+cc (10)
+dd (10)
+
+Lista 4 despues del cambio pop: 
+aa (10)
+bb (10)
+cc (10)
+dd (10)
+
+-1-aa-(-1,-1)
+1 1 1 1 1 SoyEl1
+ -> aa
+
+---PROVINCIA---
+Muestro Provincia: 
+aa
+
+Muestro Provincia: 
+aa
+
+Muestro Provincia: 
+aa
+Sinrola (7)
+Calari (10)
+Bhosa (11)
+Asti (12)
+
+Muestro Provincia: 
+aa
+Sinrola (7)
+Calari (10)
+Bhosa (11)
+Asti (12)
+
+Muestro Provincia: 
+Betis
+Sinrola (5)
+Calari (8)
+Bhosa (9)
+Asti (10)
+
+Muestro Provincia: 
+Betis
+
+Muestro Provincia: 
+Betis
+
+Muestro Provincia: 
+Betis
+
+Muestro Provincia: 
+Betis
+Betis1 (2)
+Betis5 (5)
+Betis3 (8)
+Betis4 (8)
+Betis2 (10)
+
+Borro Betis: -1
+Muestro Provincia: 
+Betis
+Betis1 (2)
+Betis5 (5)
+Betis3 (8)
+Betis4 (8)
+Betis2 (10)
+
+Borro Betis2: 10
+Muestro Provincia: 
+Betis
+Betis1 (2)
+Betis5 (5)
+Betis3 (8)
+Betis4 (8)
+
+Borro Betis1: 2
+Muestro Provincia: 
+Betis
+Betis5 (5)
+Betis3 (8)
+Betis4 (8)
+
+Borro Betis3: 8
+Muestro Provincia: 
+Betis
+Betis5 (5)
+Betis4 (8)
+
+Cercanas: 
+Betis5 (5)
+Betis4 (8)
+
+Costera p1,c1 --> Sinrola
+Costera p2,c2 --> Betis5
+Costera p1,c2 --> no hay ninguna localidad costera
+Costera p2,c1 --> no hay ninguna localidad costera
+Provincia p3
+ai
+betis1 (6)
+abizq (7)
+betis2 (8)
+betis3 (9)
+betis4 (10)
+ad (16)
+abajodrcha (23)
+Costera p3,c3 --> no hay ninguna localidad costera
+
+Provincia p4
+Centro
+abajodrcha (6)
+abajoizq (6)
+arribadrcha (6)
+arribaizq (6)
+Costera p4,c4 --> abajodrcha
+
+Las costeras4 son: 
+abajodrcha (6)
+abajoizq (6)
+arribadrcha (6)
+arribaizq (6)
+
+
+Las costeras3 son: 
+
+
+Las costeras1 son: 
+Sinrola (7)
+Bhosa (11)
+
+
+Las costeras2 son: 
+Betis5 (5)
+
+PROVINCIA1: propio
+PROVINCIA2: sin aeropuerto
+PROVINCIA3: sin aeropuerto
+PROVINCIA4: arribadrcha

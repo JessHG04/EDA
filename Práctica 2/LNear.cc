@@ -2,7 +2,7 @@
 //LNear
 #include "LNear.h"
 
-ostream & operator<< (ostream &os, const LNear &l){
+std::ostream & operator<< (std::ostream &os, const LNear &l){
     LNear::NodoL *lista; //-->ALICIA: el nodo se declara aqui como LNear::NodoL porque es funcion amiga y no hay this
     lista = l.pr;
 
@@ -106,8 +106,8 @@ int LNear::rango(){
     return devolver;
 }
 
-string LNear::getCostera(LNear lista){
-    string devolver = "";
+std::string LNear::getCostera(LNear lista){
+    std::string devolver = "";
     NodoL *aux = lista.pr;
 
     if(aux){
@@ -168,8 +168,8 @@ LNear LNear::getCosteras(Coleccion &c){
     return devolver;
 }
 
-string LNear::getConAeropuerto(LNear lista){
-    string devolver = "";
+std::string LNear::getConAeropuerto(LNear lista){
+    std::string devolver = "";
     NodoL *aux = lista.pr;
     bool aeropuerto = false;
 
@@ -245,7 +245,7 @@ void LNear::insertaLocalidad(Localidad l, int i){
     }
 }
 
-int LNear::borraLocalidad(string s){
+int LNear::borraLocalidad(std::string s){
     int devolver = -1;
     bool eliminado = false;
     NodoL *aux;
