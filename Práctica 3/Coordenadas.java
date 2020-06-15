@@ -9,15 +9,11 @@ public class Coordenadas {
 	}
 	
 	public Coordenadas(int i, int j){
-		if(i>=0){
+		if(i>=0 && j>=0){
 			fila = i;
+			columna = j;
 		}else{
 			fila = -1;
-		}
-		if(j>=0){
-			columna = j;
-		}
-		else{
 			columna = -1;
 		}
 	}
