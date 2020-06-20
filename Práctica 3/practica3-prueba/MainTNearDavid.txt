@@ -1,0 +1,450 @@
+Vamos a crear el TNear
+Es vacio? :true
+
+---------------------------------------------
+
+Vamos a llamar al insertaLocalidades para que nos instroduzca todas las  de la Coleccion
+Y vamos a imprimirlo
+
+Enio * 
+Sasn * Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Es vacio? :false
+Vamos a probar ahora a insertar localidades random a ver si cuela y despues imprimimos el arbol
+Badajoz * Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Barcelona * Badajoz - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Enio * Madrid
+Madrid * Badajoz - Barcelona - Enio - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Malaga * Badajoz - Barcelona - Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Vamos a obtener varios TreeSet con getLocalidades y a Imprimirlos
+Arbol Barcelona
+200-Badajoz-(6,2)
+0 0 0 0 0 * Se me ha borrado el commit
+
+109-Madrid-(3,10)
+0 0 0 0 0 * La greta esta contenta
+
+135-Malaga-(4,3)
+0 0 0 0 0 *** Un poco hasta la polla
+
+72-Sasn-(2,6)
+1 2 1 0 0 
+
+40-Sasn1-(1,7)
+1 2 1 0 0 
+
+41-Sasn2-(1,8)
+1 2 1 0 0 
+
+42-Sasn3-(1,9)
+1 2 1 0 0 
+
+43-Sasn4-(1,10)
+1 2 1 0 0 
+
+107-Sasn5-(3,8)
+1 2 1 0 0 
+
+
+---------------------------------------------
+
+Arbol Alcachofa
+NULL
+
+---------------------------------------------
+
+Arbol Sans5
+200-Badajoz-(6,2)
+0 0 0 0 0 * Se me ha borrado el commit
+
+103-Barcelona-(3,4)
+0 0 0 0 0 ** Ingenieria ddddd
+
+109-Madrid-(3,10)
+0 0 0 0 0 * La greta esta contenta
+
+135-Malaga-(4,3)
+0 0 0 0 0 *** Un poco hasta la polla
+
+72-Sasn-(2,6)
+1 2 1 0 0 
+
+40-Sasn1-(1,7)
+1 2 1 0 0 
+
+41-Sasn2-(1,8)
+1 2 1 0 0 
+
+42-Sasn3-(1,9)
+1 2 1 0 0 
+
+43-Sasn4-(1,10)
+1 2 1 0 0 
+
+
+---------------------------------------------
+
+Arbol Badajoz
+103-Barcelona-(3,4)
+0 0 0 0 0 ** Ingenieria ddddd
+
+109-Madrid-(3,10)
+0 0 0 0 0 * La greta esta contenta
+
+135-Malaga-(4,3)
+0 0 0 0 0 *** Un poco hasta la polla
+
+72-Sasn-(2,6)
+1 2 1 0 0 
+
+40-Sasn1-(1,7)
+1 2 1 0 0 
+
+41-Sasn2-(1,8)
+1 2 1 0 0 
+
+42-Sasn3-(1,9)
+1 2 1 0 0 
+
+43-Sasn4-(1,10)
+1 2 1 0 0 
+
+107-Sasn5-(3,8)
+1 2 1 0 0 
+
+
+---------------------------------------------
+
+Arbol Sans3
+200-Badajoz-(6,2)
+0 0 0 0 0 * Se me ha borrado el commit
+
+103-Barcelona-(3,4)
+0 0 0 0 0 ** Ingenieria ddddd
+
+109-Madrid-(3,10)
+0 0 0 0 0 * La greta esta contenta
+
+135-Malaga-(4,3)
+0 0 0 0 0 *** Un poco hasta la polla
+
+72-Sasn-(2,6)
+1 2 1 0 0 
+
+40-Sasn1-(1,7)
+1 2 1 0 0 
+
+41-Sasn2-(1,8)
+1 2 1 0 0 
+
+43-Sasn4-(1,10)
+1 2 1 0 0 
+
+107-Sasn5-(3,8)
+1 2 1 0 0 
+
+58-Sasn6-(1,25)
+1 2 1 0 0 
+
+
+---------------------------------------------
+
+Borraremos localidades ahora e imprimimos el Arbolaco
+Borramos Alachofa? false
+Borramos Alcachofa e imprimimos
+Badajoz * Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Barcelona * Badajoz - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Enio * Madrid
+Madrid * Badajoz - Barcelona - Enio - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Malaga * Badajoz - Barcelona - Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Sasn? true
+Borramos Sasn e imprimimos
+Badajoz * Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Barcelona * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Enio * Madrid
+Madrid * Badajoz - Barcelona - Enio - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Malaga * Badajoz - Barcelona - Madrid - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Badajoz - Barcelona - Madrid - Malaga - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Barcelona? true
+Borramos Barcelona e imprimimos
+Badajoz * Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Enio * Madrid
+Madrid * Badajoz - Enio - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Malaga * Badajoz - Madrid - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Badajoz - Madrid - Malaga - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Badajoz - Madrid - Malaga - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Sasn5? true
+Borramos Sasn5 e imprimimos
+Badajoz * Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Enio * Madrid
+Madrid * Badajoz - Enio - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn6
+Malaga * Badajoz - Madrid - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn1 * Badajoz - Madrid - Malaga - Sasn2 - Sasn3 - Sasn4
+Sasn2 * Badajoz - Madrid - Malaga - Sasn1 - Sasn3 - Sasn4 - Sasn6
+Sasn3 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn4 - Sasn6
+Sasn4 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn6
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Borramos cadenaVacia? false
+Borramos cadenaVacia e imprimimos
+Badajoz * Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Enio * Madrid
+Madrid * Badajoz - Enio - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn6
+Malaga * Badajoz - Madrid - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn1 * Badajoz - Madrid - Malaga - Sasn2 - Sasn3 - Sasn4
+Sasn2 * Badajoz - Madrid - Malaga - Sasn1 - Sasn3 - Sasn4 - Sasn6
+Sasn3 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn4 - Sasn6
+Sasn4 * Badajoz - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn6
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Sasn1? true
+Borramos Sasn1 e imprimimos
+Badajoz * Madrid - Malaga - Sasn2 - Sasn3 - Sasn4
+Enio * Madrid
+Madrid * Badajoz - Enio - Malaga - Sasn2 - Sasn3 - Sasn4 - Sasn6
+Malaga * Badajoz - Madrid - Sasn2 - Sasn3 - Sasn4
+Sasn2 * Badajoz - Madrid - Malaga - Sasn3 - Sasn4 - Sasn6
+Sasn3 * Badajoz - Madrid - Malaga - Sasn2 - Sasn4 - Sasn6
+Sasn4 * Badajoz - Madrid - Malaga - Sasn2 - Sasn3 - Sasn6
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Sasn3? true
+Borramos cadenaVacia e imprimimos
+Badajoz * Madrid - Malaga - Sasn2 - Sasn4
+Enio * Madrid
+Madrid * Badajoz - Enio - Malaga - Sasn2 - Sasn4 - Sasn6
+Malaga * Badajoz - Madrid - Sasn2 - Sasn4
+Sasn2 * Badajoz - Madrid - Malaga - Sasn4 - Sasn6
+Sasn4 * Badajoz - Madrid - Malaga - Sasn2 - Sasn6
+Sasn6 * Madrid - Sasn2 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Madrid? true
+Borramos Madrid e imprimimos
+Badajoz * Malaga - Sasn2 - Sasn4
+Enio * 
+Malaga * Badajoz - Sasn2 - Sasn4
+Sasn2 * Badajoz - Malaga - Sasn4 - Sasn6
+Sasn4 * Badajoz - Malaga - Sasn2 - Sasn6
+Sasn6 * Sasn2 - Sasn4
+
+
+---------------------------------------------
+
+Borramos Malaga? true
+Borramos cadenaVacia e imprimimos
+Badajoz * Sasn2 - Sasn4
+Enio * 
+Sasn2 * Badajoz - Sasn4 - Sasn6
+Sasn4 * Badajoz - Sasn2 - Sasn6
+Sasn6 * Sasn2 - Sasn4
+
+
+---------------------------------------------
+
+Volvemos a meter todas con insertaLocalidades,y las auxiliares e imprimimos
+Badajoz * Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Barcelona * Badajoz - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Enio * Madrid
+Madrid * Badajoz - Barcelona - Enio - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Malaga * Badajoz - Barcelona - Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Madrid - Sasn2 - Sasn3 - Sasn4
+
+
+---------------------------------------------
+
+Vamos a coger UNOS CUANTOS TOP VENGA HOSTIA MENUDA MIERDA
+Top 5 estrellas
+Es auxTreeset null? null
+
+Top 0 estrellas
+445-Enio-(13,16)
+1 2 1 0 1 
+
+72-Sasn-(2,6)
+1 2 1 0 0 
+
+40-Sasn1-(1,7)
+1 2 1 0 0 
+
+41-Sasn2-(1,8)
+1 2 1 0 0 
+
+42-Sasn3-(1,9)
+1 2 1 0 0 
+
+43-Sasn4-(1,10)
+1 2 1 0 0 
+
+107-Sasn5-(3,8)
+1 2 1 0 0 
+
+58-Sasn6-(1,25)
+1 2 1 0 0 
+
+
+---------------------------------------------
+
+Top 1 estrella
+200-Badajoz-(6,2)
+0 0 0 0 0 * Se me ha borrado el commit
+
+109-Madrid-(3,10)
+0 0 0 0 0 * La greta esta contenta
+
+
+---------------------------------------------
+
+Top 2 estrellas
+103-Barcelona-(3,4)
+0 0 0 0 0 ** Ingenieria ddddd
+
+
+---------------------------------------------
+
+Top 3 estrellas
+135-Malaga-(4,3)
+0 0 0 0 0 *** Un poco hasta la polla
+
+
+---------------------------------------------
+
+Vale ahora vamos a cambiar los dn y que se vuelva to loco esto e imprimimos
+
+Cambiamos a 30 dn
+
+Badajoz * Barcelona - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Barcelona * Badajoz - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Enio * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Madrid * Badajoz - Barcelona - Enio - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Malaga * Badajoz - Barcelona - Enio - Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn1 * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn2 * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5 - Sasn6
+Sasn3 * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5 - Sasn6
+Sasn4 * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn6
+Sasn6 * Badajoz - Barcelona - Enio - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+
+
+---------------------------------------------
+
+Cambiamos a 1 dn
+
+Badajoz * 
+Barcelona * 
+Enio * 
+Madrid * 
+Malaga * 
+Sasn * 
+Sasn1 * Sasn2
+Sasn2 * Sasn1 - Sasn3
+Sasn3 * Sasn2 - Sasn4
+Sasn4 * Sasn3
+Sasn5 * 
+Sasn6 * 
+
+
+---------------------------------------------
+
+Cambiamos a 5 dn
+
+Badajoz * Barcelona - Malaga
+Barcelona * Badajoz - Malaga - Sasn - Sasn1 - Sasn5
+Enio * 
+Madrid * Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Malaga * Badajoz - Barcelona - Sasn
+Sasn * Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Barcelona - Madrid - Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Madrid - Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5
+Sasn3 * Madrid - Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5
+Sasn4 * Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5
+Sasn5 * Barcelona - Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * 
+
+
+---------------------------------------------
+
+Cambiamos a 15 dn
+
+Badajoz * Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Barcelona * Badajoz - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Enio * 
+Madrid * Badajoz - Barcelona - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Malaga * Badajoz - Barcelona - Madrid - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn * Badajoz - Barcelona - Madrid - Malaga - Sasn1 - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn1 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn2 - Sasn3 - Sasn4 - Sasn5
+Sasn2 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn3 - Sasn4 - Sasn5
+Sasn3 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn4 - Sasn5
+Sasn4 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn5 - Sasn6
+Sasn5 * Badajoz - Barcelona - Madrid - Malaga - Sasn - Sasn1 - Sasn2 - Sasn3 - Sasn4
+Sasn6 * Sasn4
+
+
+---------------------------------------------
+

@@ -36,9 +36,10 @@ public class GrafLoc {
         if(gr != null){
             if(o1 >= 0 && o1 < gr.size()){
                 if(o2 >= 0 && o2 < gr.get(0).size()){
-                    if(gr.get(o1).get(o2) != null){
-                        if(gr.get(o1).get(o2) != p){
+                    if(gr.get(o1).get(o2) != null && gr.get(o2).get(o1) != null){
+                        if(gr.get(o1).get(o2) != p && gr.get(o2).get(o1) != p){
                             gr.get(o1).set(o2, p);
+                            gr.get(o2).set(o1, p);
                             devolver = true;
                         }
                     }
@@ -53,9 +54,9 @@ public class GrafLoc {
 
         if(gr != null){
             if(gr.get(o1).get(o2) != null){
-                if(gr.get(o1).get(o2) != Integer.MAX_VALUE){
+                //if(gr.get(o1).get(o2) != Integer.MAX_VALUE){
                     devolver = gr.get(o1).get(o2);
-                }
+                //}
             }
         }
         return devolver;
@@ -65,9 +66,10 @@ public class GrafLoc {
         boolean devolver = false;
 
         if(gr != null){
-            if(gr.get(o1).get(o2) != null){
-                if(gr.get(o1).get(o2) != Integer.MAX_VALUE){
+            if(gr.get(o1).get(o2) != null && gr.get(o2).get(o1) != null){
+                if(gr.get(o1).get(o2) != Integer.MAX_VALUE && gr.get(o1).get(o2) != Integer.MAX_VALUE){
                     gr.get(o1).set(o2, Integer.MAX_VALUE);
+                    gr.get(o2).set(o1, Integer.MAX_VALUE);
                     devolver = true;
                 }
             }
@@ -82,7 +84,7 @@ public class GrafLoc {
         if(gr!=null){
             if(gr.get(o1) != null){
                 //Borramos la fila
-                for(int x = 0; x<o1; x++){
+                for(int x = 0; x<gr.size(); x++){
                     if(gr.get(o1).get(x)!= Integer.MAX_VALUE){
                         gr.get(o1).set(x, Integer.MAX_VALUE);
                         devolver = true;
@@ -92,7 +94,7 @@ public class GrafLoc {
 
             if(gr.get(0).get(o1)!= null){
                 //Borramos la columna
-                for(int y = 0; y<o1; y++){
+                for(int y = 0; y<gr.size(); y++){
                     if(gr.get(y).get(o1)!= Integer.MAX_VALUE){
                         gr.get(y).set(o1, Integer.MAX_VALUE);
                         devolver = true;
@@ -202,7 +204,49 @@ public class GrafLoc {
     }
 
     public void escribeDFS(int i){
-
+        String imprimir = "";
+        boolean parar = false;
+        int veces = 0;
+        ArrayList<Integer> vistos = new ArrayList <Integer>();
+        int num = i;
+        
+        if(gr!= null){
+            if(i >= 0 && i < gr.size()){
+                vistos.add(num);
+                while(veces < gr.size()){
+                    parar = false;
+                    for(int x = 0; x < gr.size() && !parar; x++){
+                        if(gr.get(num).get(x) != Integer.MAX_VALUE && gr.get(num).get(x) != 0){
+                            if(!vistos.contains(x)){                                
+                                vistos.add(x);
+                                num = x;
+                                parar = true;
+                            }
+                        }
+                    }
+                    if(!parar){
+                        for(int x = 0; x < gr.size() && !parar; x++){
+                            if(gr.get(num).get(x) != 0){
+                                if(!vistos.contains(x)){                                
+                                    vistos.add(x);
+                                    num = x;
+                                    parar = true;
+                                }
+                            }
+                        }
+                    }
+                    veces++;
+                }
+            }
+        }
+        for(int x = 0; x < vistos.size(); x++){
+            if(x < vistos.size()-1){
+                imprimir += vistos.get(x) + ", ";
+            }else{
+                imprimir +=vistos.get(x);
+            }
+        }
+        System.out.print(imprimir);
     }
 
 }
