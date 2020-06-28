@@ -1,9 +1,0 @@
-TNear.java:103: error: cannot find symbol
-            String l = (Localidad2)parray[x].getNombre();
-                                            ^
-  symbol:   method getNombre()
-  location: class Object
-TNear.java:103: error: incompatible types: Localidad2 cannot be converted to String
-            String l = (Localidad2)parray[x].getNombre();
-                       ^
-2 errors
