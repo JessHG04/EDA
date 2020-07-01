@@ -67,27 +67,34 @@ public class TNear {
     public boolean borraLocalidad(String p){
         boolean devolver = false;
         Localidad2 key = null;
-        //TreeSet<Localidad2> cercanas = new TreeSet<Localidad2>(); //Value
-
-        /*for(Map.Entry<Localidad2, TreeSet<Localidad2>> entrada: ti.entrySet()){
-            System.out.println("Empezamos");
-            key = entrada.getKey();
-            ti.remove(key);
-            devolver = true;
-            if(p.equals(key.getNombre())){
-                for (Map.Entry<Localidad2, TreeSet<Localidad2>> entrada2 : ti.entrySet()) {
+        TreeSet<Localidad2> cercanas = new TreeSet<Localidad2>(); //Value
+		TreeSet<Localidad2> borrar = new TreeSet<Localidad2>();
+		TreeSet<Localidad2> borrar2 = new TreeSet<Localidad2>();
+		for (Map.Entry<Localidad2, TreeSet<Localidad2>> entrada : ti.entrySet()) {
+	        key = entrada.getKey();
+	        if(p.equals(key.getNombre())){
+	        	borrar.add(key);
+	        	for (Map.Entry<Localidad2, TreeSet<Localidad2>> entrada2 : ti.entrySet()) {
 	        		cercanas = entrada2.getValue();
-	    	        for( Localidad2 loc: cercanas) {
-	    	        	if( loc.getNombre().equals(p) ) {
-	    	        		cercanas.remove(loc);
-	    	        	}
-	    	        }
+		        	for(Localidad2 loc: cercanas){
+		        		if(p.equals(loc.getNombre())){
+		        			borrar2.add(loc);
+		        		}
+		        	}
+		        	Iterator<Localidad2> it2 = borrar2.iterator();
+					while(it2.hasNext()) {
+						cercanas.remove(it2.next());
+					}
 	        	}
-            }
-        }*/
-
-
-        return devolver;
+	        	devolver = true;
+	        }
+	        
+	   	}
+		Iterator<Localidad2> it = borrar.iterator();
+		while(it.hasNext()){
+			ti.remove(it.next());
+		}
+		return devolver;
     }
 
     public TreeSet<Localidad2> getLocalidades(String s){
@@ -101,7 +108,7 @@ public class TNear {
        }
         return devolver;
     }
-    //REVISAR
+    
     public void setDn(int i){
         Localidad2 key = null;
         Localidad2 key2 = null;
@@ -118,50 +125,52 @@ public class TNear {
                     cercanas2= entry2.getValue();
                     dm = distanciaManhattan(key.getCoor().getColumna(), key.getCoor().getFila(), key2.getCoor().getColumna(), key2.getCoor().getFila());
                     if(dm <= dn) {
-                        if(!cercanas.contains(key) ) {
-                            cercanas.add(key);
+                        if(!cercanas.contains(key2) && !key2.equals(key)) {
+                            cercanas.add(key2);
                         }
-                        if(!cercanas2.contains(key) ) {
-                            cercanas2.add(key);
+                    }else{
+                        if(cercanas.contains(key2)){
+                            cercanas.remove(key2);
                         }
                     }
                 }
            }
         }
     }
-
+    public int contador(String s) {
+		int estrellas = 0;
+		for( int x = 0; x < s.length(); x++ ) {
+			if(s.charAt(x) == '*'){
+				estrellas++;
+			}
+		}
+		return estrellas;
+    }
+    
     public TreeSet<Localidad2> getTop( int i){
         TreeSet<Localidad2> devolver = null;
-
+        Localidad2 key = null;
+        
+		if(i == 0) {
+            devolver = new TreeSet<Localidad2>();
+			for (Map.Entry<Localidad2, TreeSet<Localidad2>> entry : ti.entrySet()) {
+				 key = entry.getKey();
+				 if( key.getInfo().getTop() == "") {
+					devolver.add(key);
+				 }
+			}
+		}else if(i > 0 && i <= 3) {
+            devolver = new TreeSet<Localidad2>();
+            for(Map.Entry<Localidad2, TreeSet<Localidad2>> entry : ti.entrySet()){
+                key = entry.getKey();
+                if(contador(key.getInfo().getTop()) == i) {
+                    devolver.add(key);
+                }
+            }
+		}
         return devolver;
     }
 
-    /*public String toString(){
-        String devolver = "";
-        Iterator<Localidad2> principal = ti.keySet().iterator();
-        TreeSet<Localidad2> cercanas = new TreeSet<Localidad2>();
-        Iterator<Localidad2> itcercanas;
-        
-        if(!ti.isEmpty()){
-            while(principal.hasNext()){
-                devolver += principal.next().getNombre() + " * ";
-                cercanas = ti.get(principal.next());
-                itcercanas = cercanas.iterator();
-                if(!itcercanas.hasNext()){
-                    devolver += "\n";
-                }
-                while(itcercanas.hasNext()){
-                    devolver += itcercanas.next().getNombre();
-                    if(itcercanas.hasNext()){
-                        devolver += " - ";
-                    }else{
-                        devolver += "\n";
-                    }
-                }
-            }
-        }
-        return devolver;
-    }*/
     public String toString(){
 		String devolver = "";
         Iterator<Localidad2> it;
