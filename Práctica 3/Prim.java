@@ -1,4 +1,5 @@
 //23900715N HERNANDEZ GOMEZ, JESSICA
+import java.util.*;
 public class Prim {
     public static void main(String[] args) {
         Coleccion colec = new Coleccion();
